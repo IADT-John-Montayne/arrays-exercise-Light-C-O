@@ -1,3 +1,5 @@
+//====================== START OF PRACTICE =======================================
+
 //displays all the items in the array
 let names = ["Eve","Adam", "John", "Nora", "Victor", "Dora"];
 console.log(names)
@@ -20,7 +22,7 @@ console.log(names)
 names.unshift("Bob");
 console.log(names)
 
-//removes the item at the start
+//removes the item at the end
 names.shift("Bob");
 console.log(names)
 
@@ -51,6 +53,61 @@ console.log(names)
 //replacing an item the array
 names.splice(1, 1, "Tori");
 console.log(names)
+
+
+//=================== START OF FRUIT BASKET TASK 1 ==================================================
+
+//Initialise
+let basket = ["apple", "banana", "orange", "pear"];
+console.log(basket)
+
+//read from array
+	//Log the first fruit
+	console.log(basket[0])
+
+	//Log the last fruit - use .length
+	console.log(basket[basket.length - 1])
+
+//modify
+	//replace banana with kiwi (find banana first)
+	let findb = basket.indexOf("banana")
+	basket[findb] = "kiwi";
+	console.log(basket)
+
+	//remove the last item
+	basket.pop();
+	console.log(basket)
+
+	//Add "mango" to the start of the array
+	basket.unshift("mango");
+	console.log(basket)
+
+	//loop through basket
+	for (let i = 0; i < basket.length; i++) {
+	console.log(basket[i]);
+	}
+
+	//use FOR loop to every
+	for (let i = 0; i < basket.length; i++) {
+		
+	console.log("Fruit " + (i + 1)+ ": " + (basket[i]));
+	}
+//search fruit
+	//Check if "orange exists"
+	console.log(basket.indexOf("orange"))
+
+	//if stament if orange exists
+	if (basket.indexOf("orange") === -1) {
+		console.log("Orange not found");
+	} else {
+		console.log("Orange found at index s" + (basket.indexOf("orange")));
+	}
+
+//copy part of the basket
+	//create array called citrus
+	let citrus = [];
+
+		
 
 
 
